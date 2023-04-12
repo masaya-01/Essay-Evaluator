@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Essay Evaluation Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style-result.css">
+</head>
+<body>
+    <h1>Essay Evaluation</h1>
+    <div class="form-container">
+        <form id="evaluationForm">
+        <p>Selected Exam: {{ exam }}</p>
+        <p>Score: {{ score }}</p>
+        <h3>Original Essay</h3>
+        <p>{{ original_essay }}</p>
+        <h3>Revised Essay</h3>
+        <p>{{ revised_essay }}</p>
+        <h3>Advice:</h3>
+        <p>{{ advice }}</p>
+        </form>
+    </div>
+  
+        
+        <a href="/" class="btn btn-primary">Evaluate another essay</a>
+     
+    <script src="/static/scripts-result.js"></script>
+</body>
+</html>
