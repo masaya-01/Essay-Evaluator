@@ -7,3 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
         resultContainer.style.transform = 'translateY(0)';
     }, 100);
 });
+
+// Add this code to the displayResult function in scripts.js
+document.getElementById('originalEssay').innerText = result.original_essay;
+document.getElementById('revisedEssay').innerText = result.revised_essay;
+

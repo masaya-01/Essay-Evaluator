@@ -10,12 +10,23 @@
     <h1>Essay Evaluation</h1>
     <div class="form-container">
         <form id="evaluationForm">
-        <p>Selected Exam: {{ exam }}</p>
-        <p>Score: {{ score }}</p>
-        <h3>Original Essay</h3>
-        <p>{{ original_essay }}</p>
-        <h3>Revised Essay</h3>
-        <p>{{ revised_essay }}</p>
+        <h2>Selected Exam: {{ exam }}</h2>
+        <h2>Score: {{ score }}</h2>
+
+
+        <!-- Add this inside the resultContainer div -->
+        <div id="essaysContainer">
+            <div class="essay-container" id="originalEssayContainer">
+                <h3>Original Essay</h3>
+                <div class="essay" id="originalEssay">{{ original_essay }}</div>
+            </div>
+            <div class="essay-container" id="revisedEssayContainer">
+                <h3>Revised Essay</h3>
+                <div class="essay" id="revisedEssay">{{ revised_essay }}</div>
+            </div>
+        </div>
+        
+
         <h3>Advice:</h3>
         <p>{{ advice }}</p>
         </form>
